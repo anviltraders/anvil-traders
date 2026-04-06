@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANVIL TRADERS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+    body { line-height:1.6; color:#000; background:#000; }
+    a { text-decoration:none; color:inherit; }
+
+    header { background:#000; color:#FFD700; padding:20px 10%; display:flex; justify-content:space-between; flex-wrap:wrap; align-items:center; }
+    header img { height:50px; }
+    nav a { margin-left:20px; font-weight:600; color:#FFD700; }
+    nav a:hover { color:#fff; }
+
+    .hero { background:#000; color:#FFD700; text-align:center; padding:80px 10%; }
+    .hero h1 { font-size:2.5rem; margin-bottom:20px; }
+    .hero p { font-size:1.2rem; margin-bottom:30px; }
+    .hero a { background:#FFD700; color:#000; padding:15px 30px; font-weight:700; border-radius:5px; }
+
+    .features { display:flex; flex-wrap:wrap; justify-content:space-around; padding:60px 10%; text-align:center; background:#FFD700; }
+    .feature { width:300px; margin:20px; padding:20px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.3); background:#000; color:#FFD700; }
+    .feature h3 { margin-bottom:15px; }
+
+    .pricing { padding:60px 10%; text-align:center; background:#000; color:#FFD700; }
+    .pricing h2 { margin-bottom:40px; }
+    .plan { display:inline-block; background:#FFD700; color:#000; margin:10px; padding:30px 20px; border-radius:10px; width:250px; box-shadow:0 2px 10px rgba(0,0,0,0.3); }
+    .plan h3 { margin-bottom:15px; }
+    .plan p { margin-bottom:20px; }
+    .plan button { background:#000; color:#FFD700; padding:10px 20px; border:none; border-radius:5px; font-weight:600; cursor:pointer; }
+
+    .blog { padding:60px 10%; background:#FFD700; color:#000; }
+    .blog h2 { margin-bottom:40px; text-align:center; }
+    .post { background:#000; padding:20px; margin:20px 0; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.3); color:#FFD700; }
+
+    .contact { padding:60px 10%; text-align:center; background:#000; color:#FFD700; }
+    .contact h2 { margin-bottom:30px; }
+    .contact p, .contact a { font-weight:600; display:block; margin:10px 0; color:#FFD700; }
+
+    footer { background:#000; color:#FFD700; text-align:center; padding:20px; }
+
+    @media(max-width:768px){
+      .features { flex-direction:column; align-items:center; }
+      nav { margin-top:10px; width:100%; text-align:center; }
+      nav a { margin:0 10px; display:inline-block; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="ANVIL TRADERS Logo" id="logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#subscribe">Subscribe</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>Trade Smarter. Profit Faster.</h1>
+  <p>ANVIL TRADERS offers expert signals, market analysis, and mentorship to grow your trading skills.</p>
+  <a href="#subscribe">Subscribe via EcoCash</a>
+</section>
+
+<section class="features" id="services">
+  <div class="feature">
+    <h3>Daily Trading Signals</h3>
+    <p>Get actionable trading signals delivered directly to you.</p>
+  </div>
+  <div class="feature">
+    <h3>Market Analysis</h3>
+    <p>Expert insights to help you make smarter trading decisions.</p>
+  </div>
+  <div class="feature">
+    <h3>Mentorship & Education</h3>
+    <p>Learn trading strategies and skills to grow your account.</p>
+  </div>
+</section>
+
+<section class="pricing" id="subscribe">
+  <h2>Subscription Packages</h2>
+
+  <div class="plan">
+    <h3>Starter</h3>
+    <p>Signals Only</p>
+    <p id="starter-number"><strong>0778904404</strong></p>
+    <button onclick="copyNumber('starter-number')">Copy Number</button>
+  </div>
+
+  <div class="plan">
+    <h3>Pro</h3>
+    <p>Signals + Analysis</p>
+    <p id="pro-number"><strong>0778904404</strong></p>
+    <button onclick="copyNumber('pro-number')">Copy Number</button>
+  </div>
+
+  <div class="plan">
+    <h3>VIP</h3>
+    <p>All Access + Mentorship</p>
+    <p id="vip-number"><strong>0778904404</strong></p>
+    <button onclick="copyNumber('vip-number')">Copy Number</button>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <h2>Latest Market Insights</h2>
+  <div class="post">
+    <h3>How to Spot Bullish Trends</h3>
+    <p>Learn key patterns that indicate potential upward price movements.</p>
+  </div>
+  <div class="post">
+    <h3>Understanding Order Blocks</h3>
+    <p>Master this critical concept to improve your trading accuracy.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Join our WhatsApp group for updates:</p>
+  <a href="https://chat.whatsapp.com/E7vqfcCVwQjGB62X9TfOdr" target="_blank">Join Now</a>
+  <p>For EcoCash payments or inquiries:</p>
+  <p id="contact-number"><strong>+263776938613 / +263778904404</strong></p>
+  <button onclick="copyNumber('contact-number')">Copy Number</button>
+  <p>Email: anviltraders@gmail.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 ANVIL TRADERS. All rights reserved.</p>
+</footer>
+
+<script>
+  function copyNumber(elementId) {
+    const numberText = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(numberText).then(() => {
+      alert("Number copied to clipboard: " + numberText);
+    });
+  }
+</script>
+
+</body>
+</html>
